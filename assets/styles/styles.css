@@ -1,5 +1,7 @@
 /* ================================= 
+
   Base Element Styles
+
 ==================================== */
 
 * {
@@ -56,10 +58,12 @@ button {
 }
 
 /* ================================= 
+
   Base Layout Styles
+
 ==================================== */
 
-/* ---- Navigation ---- */
+/* ---- NAVIGATION---- */
 
 .name {
   font-size: 2em;
@@ -103,6 +107,8 @@ button a,
   color: #EF8354;
 }
 
+/* FOOTER SECTION */
+
 .footer-name {
   font-family: 'Permanent Marker', cursive;
   font-weight: bold;
@@ -123,7 +129,9 @@ button a,
   display: none;
 }
 
-/* ---- Layout Containers ---- */
+/* ---- LAYOUT CONTAINERS ---- */
+
+/* NAVIGATION */
 
 .main-header {
   background: #404040;
@@ -159,6 +167,8 @@ button a,
   padding: 1em;
 }
 
+/* HOME PAGE CONTENT */
+
 .col {
   text-align: center;
 }
@@ -176,6 +186,8 @@ button a,
   display: none;
 }
 
+/* CONTACT SECTION */
+
 .contact {
   padding-bottom: 2em;
 }
@@ -188,6 +200,8 @@ button a,
   color: #EF8354;
 }
 
+/* FOOTER SECTION */
+
 .main-footer {
   border-top: 1px solid lightgray;
   margin: 0 auto;
@@ -195,7 +209,7 @@ button a,
   width: 80%;
 }
 
-/* ---- RESOURCES PAGES ---- */
+/* ---- ATHLETE & COACHES RESOURCES PAGES ---- */
 .section-title__thin {
   color: #EF8354;
   font-size: 1.5rem;
@@ -211,12 +225,13 @@ button a,
   border: 1px solid #BFC0C0;
   border-radius: 5px;
   color: #222;
+  display: inline-block;
   font-size: 18px;
   height: 95%;
   min-height: 450px;
 	padding-left: 0;
-  margin: 0 auto 30px auto;
-  max-width: 90%;
+  margin: 0 0 2em 0;
+  width: 70%;
   text-align: center;
 }
 
@@ -246,11 +261,15 @@ button a,
   background-color: #2ecc71
 }
 
-/* ================================= 
-  Tablet Styles
+/* ==================================
+
+  TABLET STYLES
+
 ==================================== */
 
 @media (min-width: 768px) {
+
+  /* NAVIGATION & BANNER SECTION */
 
   .main-header {
     margin-bottom: 0;
@@ -261,6 +280,7 @@ button a,
     color: #F3F1EF;
     background: none;
     display: inline-block;
+    font-size: 1.2rem;
   }
 
   .dropdown {
@@ -271,6 +291,8 @@ button a,
   .banner-image {
     display: inline-block;
   }
+
+  /* HOME PAGE CONTENT */
 
   .page-section {
     margin: 0 auto;
@@ -287,9 +309,13 @@ button a,
     width: 100%;
   }
 
+  /* CONTACT SECTION */
+
   .contact-info {
     font-size: 1.3em;
   }
+
+  /* FOOTER SECTION */
 
   .main-footer {
     font-size: 1rem;
@@ -330,15 +356,36 @@ button a,
     padding: 0 5px 0 0;
   }
 
-  /* ISSUES */
+  /* ISSUES PAGES */
 
   .info {
     font-size: 1.1rem;
   }
 
   .issue-section {
-    margin: 0 auto;
-    padding: 1em;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .issue-title {
+    width: 100%;
+  }
+
+  .issue {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .issues-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0;
     text-align: center;
     width: 90%;
   }
@@ -348,14 +395,11 @@ button a,
   }
 
   .issue-col {
-    float: left;
     width: 50%;
-  }
-
-  .issue {
     height: 100%;
+    padding: .5em;
   }
-
+  
   /* ---- Float clearfix ---- */
 
 	.clearfix::after {
@@ -366,12 +410,14 @@ button a,
 }
 
 /* ================================= 
+
   Desktop Styles
+
 ==================================== */
 
 @media (min-width: 1024px) {
 
-  /* Navigation */
+  /* NAVIGATION */
   .nav-caret {
   display: inline-block;
   }
@@ -446,7 +492,7 @@ button a,
 
   .main-nav a {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .banner-image {
@@ -457,7 +503,7 @@ button a,
     font-size: 1.7rem;
   }
 
-  /* Resources Images */
+  /* HOME PAGE CONTENT */
 
   .resource-info-container {
     font-size: 1.4rem; 
@@ -499,7 +545,7 @@ button a,
     width: 25%;
   }
 
-  /* Resources Pages */
+  /* ATHLETE & COACHES RESOURCES PAGES */
 
   .page-section {
     width: 70%;
@@ -515,20 +561,14 @@ button a,
 
   .issue-section {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
   }
 
   .issue-col {
-    margin: 0 auto;
     width: 33.333%;
   }
 
-  .col-center {
-    text-align: center;
-    width: 100%;
-  }
-
-  /* Adulting: Saints Style */
+  /* ADULTING SAINTS STYLE PAGE */
 
   .resource-container {
     float: left;
