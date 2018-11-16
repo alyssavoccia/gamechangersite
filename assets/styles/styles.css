@@ -48,6 +48,10 @@ button {
   display: none;
 }
 
+.pin {
+  display: none;
+}
+
 .nav-caret {
   display: none;
 }
@@ -156,6 +160,7 @@ button a,
 }
 
 .container {
+  display: block;
   margin: 0 auto;
   padding-bottom: 1em;
   text-align: center;
@@ -492,7 +497,7 @@ button a,
 
   .main-nav a {
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .banner-image {
@@ -538,18 +543,41 @@ button a,
     display: block;
   }
 
-  .wgyb {
-    display: block;
-    float: right;
-    margin: 0 auto;
-    width: 25%;
-  }
-
-  /* ATHLETE & COACHES RESOURCES PAGES */
-
-  .page-section {
+  .resources-section {
+    float: left;
     width: 70%;
   }
+
+  .page-section {
+    width: 80%;
+  }
+
+  .wgyb-graphic {
+    position: relative;
+    width: 100%;
+  }
+
+  .wgyb {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    float: left;
+    margin-top: 1em;
+    margin-right: -3em;
+    padding: .5em;
+    width: 20%;
+  }
+
+  .pin {
+    display: block;
+    position: absolute;
+    right: 20%;
+    top: -1em;
+    transform: scaleX(-1);
+  }
+
+
+  /* ATHLETE & COACHES RESOURCES PAGES */
 
   .section-title__thin {
     font-size: 1.8rem;
@@ -568,15 +596,17 @@ button a,
     width: 33.333%;
   }
 
-  /* ADULTING SAINTS STYLE PAGE */
-
-  .resource-container {
-    float: left;
-    margin: 0 auto;
-    width: 75%;
+  .contact {
+    display: block;
+    float: none;
+    position: relative;
   }
 
-  .footer-nav {
+  .footer-name {
+    font-size: 1.3rem;
+  }
+
+  .footer-nav a {
     font-size: 1.2rem;
   }
 }
