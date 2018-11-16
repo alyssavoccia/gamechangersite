@@ -1,0 +1,542 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F1EF;
+  color: #222;
+	font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: .95em;
+  line-height: 1.75;
+	margin-bottom: 1.8em;
+}
+
+nav {
+  list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: center;
+}
+
+.banner-image {
+  display: none;
+}
+
+.nav-caret {
+  display: none;
+}
+
+.col {
+  font-size: 0;
+  line-height: 0;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
+	margin: 0;
+}
+
+.name a {
+  color: #EF8354;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.main-nav {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+button a,
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+button a,
+.main-nav a {
+  background: #F3F1EF;
+  color: #222;
+  font-size: .95em;
+  font-weight: 700;
+  margin: 5px 15px;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: #EF8354;
+}
+
+.footer-name {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: bold;
+  float: left;
+}
+
+.footer-nav {
+  font-weight: bold;
+  float: right;
+  text-transform: uppercase;
+}
+
+.footer-nav a {
+  color: #EF8354;
+}
+
+.footer-nav__large {
+  display: none;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  background: #404040;
+  box-shadow: 0 8px 6px -6px #999;
+  margin-bottom: 2em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.headline {
+  background: #EF8354;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 100%;
+  padding: .5em;
+  text-align: center;
+}
+
+.headline-important {
+  color: #222;
+}
+
+.container {
+  margin: 0 auto;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.page-section {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+}
+
+.col {
+  text-align: center;
+}
+
+.resource-image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wgyb {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.contact {
+  padding-bottom: 2em;
+}
+
+.contact-info {
+  margin: 0 auto;
+}
+
+.contact-str {
+  color: #EF8354;
+}
+
+.main-footer {
+  border-top: 1px solid lightgray;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 80%;
+}
+
+/* ---- RESOURCES PAGES ---- */
+.section-title__thin {
+  color: #EF8354;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.issue-section {
+  padding: 1em;
+  text-align: center;
+}
+
+.issue {
+  border: 1px solid #BFC0C0;
+  border-radius: 5px;
+  color: #222;
+  font-size: 18px;
+  height: 95%;
+  min-height: 450px;
+	padding-left: 0;
+  margin: 0 auto 30px auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+.issue li:first-child,
+.issue li:last-child {
+	padding: 20px 5px;
+}
+
+.issue li {
+	list-style: none;
+	padding: 13px;
+}
+
+.issue h3 {
+  color: #F3F1EF;
+  margin-top: 0;
+	margin-bottom: 0;
+  font-size: 24px;
+}
+
+.issue li:nth-last-child(2) {
+  padding: 13px 13px;
+  margin-right: 0;
+}
+
+.issue-header {
+  background-color: #2ecc71
+}
+
+/* ================================= 
+  Tablet Styles
+==================================== */
+
+@media (min-width: 768px) {
+
+  .main-header {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .main-nav a {
+    color: #F3F1EF;
+    background: none;
+    display: inline-block;
+  }
+
+  .dropdown {
+    display: inline-table;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    display: inline-block;
+  }
+
+  .page-section {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .col {
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .col-large {
+    width: 100%;
+  }
+
+  .contact-info {
+    font-size: 1.3em;
+  }
+
+  .main-footer {
+    font-size: 1rem;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    width: 85%;
+  }
+
+  .footer-small {
+    display: none;
+  }
+
+  .footer-name {
+    color: #EF8354;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .footer-nav__large {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-nav__large a {
+    color: #222;
+  }
+
+  .footer-nav__large a:hover {
+    color: #EF8354;
+  }
+
+  .footer-nav__large li {
+    display: inline-block;
+    font-size: .8rem;
+    padding: 0 5px 0 0;
+  }
+
+  /* ISSUES */
+
+  .info {
+    font-size: 1.1rem;
+  }
+
+  .issue-section {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    width: 90%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .issue-col {
+    float: left;
+    width: 50%;
+  }
+
+  .issue {
+    height: 100%;
+  }
+
+  /* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+/* ================================= 
+  Desktop Styles
+==================================== */
+
+@media (min-width: 1024px) {
+
+  /* Navigation */
+  .nav-caret {
+  display: inline-block;
+  }
+
+  .topnav {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  /* Dropdown Container - Used to Position the Content */
+  .dropdown {
+    display: inline-table;
+    overflow: hidden;
+  }
+
+  /* Style the Dropbown button to Fit the Topnav */
+  .dropdown .dropdown-btn {
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+  }
+
+  /* Style the Dropdown Content*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    max-width: 310px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .dropdown-link {
+    font-size: .8rem;
+  }
+
+  /* Style the Links in the Dropdown */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* Adds a Background Color to Links in the Dropdown on Hover */
+  .dropdown-content a:hover {
+    color: #EF8354;
+  }
+
+  .dropdown:hover {
+    background-color: #222;
+  }
+
+  /* Displays the Dropdown on Hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .nav-container {
+    float: right;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+    width: 75%;
+  }
+
+  .main-nav a {
+    display: inline-block;
+    font-size: 1.1rem;
+  }
+
+  .banner-image {
+    background-size: cover%;
+  }
+
+  .headline {
+    font-size: 1.7rem;
+  }
+
+  /* Resources Images */
+
+  .resource-info-container {
+    font-size: 1.4rem; 
+    position: relative;
+    width: 100%;
+  }
+
+  .overlay {
+    color: #F3F1EF;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #404040;
+    line-height: 1.5;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .text {
+    padding-top: 2em;
+  }
+  
+  .resource-info-container:hover .overlay {
+    height: 80%;
+  }
+
+  .overlay {
+    display: block;
+  }
+
+  .wgyb {
+    display: block;
+    float: right;
+    margin: 0 auto;
+    width: 25%;
+  }
+
+  /* Resources Pages */
+
+  .page-section {
+    width: 70%;
+  }
+
+  .section-title__thin {
+    font-size: 1.8rem;
+  }
+
+  .info {
+    font-size: 1.4rem;
+  }
+
+  .issue-section {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .issue-col {
+    margin: 0 auto;
+    width: 33.333%;
+  }
+
+  .col-center {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Adulting: Saints Style */
+
+  .resource-container {
+    float: left;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .footer-nav {
+    font-size: 1.2rem;
+  }
+}
